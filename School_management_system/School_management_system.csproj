@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4483A9CE-D3BC-4DB1-A391-43B0968A56EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>School_management_system</RootNamespace>
+    <AssemblyName>School_management_system</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Addmission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Addmission.Designer.cs">
+      <DependentUpon>Addmission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Classes.Designer.cs">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClassTiming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClassTiming.Designer.cs">
+      <DependentUpon>ClassTiming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Deletion.cs" />
+    <Compile Include="Forms\Groups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Groups.Designer.cs">
+      <DependentUpon>Groups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\HomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\HomeScreen.Designer.cs">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Insertion.cs" />
+    <Compile Include="MainForms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\MainClass.cs" />
+    <Compile Include="MainForms\MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\MDI.Designer.cs">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Periods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Periods.Designer.cs">
+      <DependentUpon>Periods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Retreival.cs" />
+    <Compile Include="Forms\Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Roles.Designer.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\sample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Samples\sample.Designer.cs">
+      <DependentUpon>sample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Samples\sample2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Samples\sample2.Designer.cs">
+      <DependentUpon>sample2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sections.Designer.cs">
+      <DependentUpon>Sections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Shifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Shifts.Designer.cs">
+      <DependentUpon>Shifts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Subjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Subjects.Designer.cs">
+      <DependentUpon>Subjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Updation.cs" />
+    <EmbeddedResource Include="Forms\Addmission.resx">
+      <DependentUpon>Addmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Classes.resx">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClassTiming.resx">
+      <DependentUpon>ClassTiming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Groups.resx">
+      <DependentUpon>Groups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Periods.resx">
+      <DependentUpon>Periods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\HomeScreen.resx">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\MDI.resx">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\Roles.resx">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\sample.resx">
+      <DependentUpon>sample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\sample2.resx">
+      <DependentUpon>sample2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sections.resx">
+      <DependentUpon>Sections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Shifts.resx">
+      <DependentUpon>Shifts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Subjects.resx">
+      <DependentUpon>Subjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="myDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>myDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myDB.dbml.layout">
+      <DependentUpon>myDB.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\admission.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\section.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\tt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\period.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\exam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\noti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\vouchar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\roles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Attendence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\add-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\plus-zoom-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\save-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Shift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-1655783_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-1204029_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-1204029_12801.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
